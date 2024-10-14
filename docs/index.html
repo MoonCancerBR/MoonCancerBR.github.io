@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Luís Fernando de Sá Amorim</title>
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/components.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <meta name="description" content="Página pessoal de Luís Fernando de Sá Amorim">
+    <link rel="icon" href="Midias/Perfil/favicon.ico" type="image/x-icon">
+</head>
+<body>
     <div class="photo-container">
         <div class="cover-photo"></div>
-        <img src="../docs/Midias/Perfil/eu.jpg" alt="Minha Foto" class="profile-photo"> 
-
+        <img src="Midias/Perfil/eu.jpg" alt="Minha Foto" class="profile-photo"> 
         <!-- Seção de ícones das redes sociais -->
         <div class="social-icons">
             <a href="https://github.com/seu_usuario" target="_blank">
@@ -29,25 +29,22 @@
         </div>
     </div>
 
-</head>
-<body>
+    <section class="comments-section">
+        <h2>Comentários</h2>
+        <div id="commentsDisplay"></div>
+    </section>
 
-<section class="comments-section">
-    <h2>Comentários</h2>
-    <div id="commentsDisplay"></div>
-</section>
+    <!-- Adiciona o GIF indicando desenvolvimento -->
+    <div class="dev-gif-container" style="text-align: center; margin: 20px 0;">
+        <img src="Midias/Outros/dev.gif" alt="Em Desenvolvimento" style="max-width: 100%; height: auto;">
+    </div>
 
-<!-- Adiciona o GIF indicando desenvolvimento -->
-<div class="dev-gif-container" style="text-align: center; margin: 20px 0;">
-    <img src="../docs/Midias/Outros/dev.gif" alt="Em Desenvolvimento" style="max-width: 100%; height: auto;">
-</div>
-
-<div class="fixed-bar">
-    <a href="../docs/Paginas/index.html" class="nav-button"><i class="fas fa-home"></i> Home</a>
-    <a href="../docs/Paginas/sobre_mim.html" class="nav-button"><i class="fas fa-user"></i> Sobre mim</a>
-    <a href="../docs/Paginas/experiencias_formacao.html" class="nav-button"><i class="fas fa-graduation-cap"></i> Experiências e formação</a>
-    <a href="../docs/Paginas/projetos.html" class="nav-button"><i class="fas fa-code"></i> Projetos</a>
-    <a href="../docs/Paginas/comentarios.html" class="nav-button"><i class="fas fa-comments"></i> Comentários</a>
-</div>
+    <div class="fixed-bar">
+        <a href="Paginas/index.html" class="nav-button"><i class="fas fa-home"></i> Home</a>
+        <a href="Paginas/sobre_mim.html" class="nav-button"><i class="fas fa-user"></i> Sobre mim</a>
+        <a href="Paginas/experiencias_formacao.html" class="nav-button"><i class="fas fa-graduation-cap"></i> Experiências e formação</a>
+        <a href="Paginas/projetos.html" class="nav-button"><i class="fas fa-code"></i> Projetos</a>
+        <a href="Paginas/comentarios.html" class="nav-button"><i class="fas fa-comments"></i> Comentários</a>
+    </div>
 </body>
 </html>
