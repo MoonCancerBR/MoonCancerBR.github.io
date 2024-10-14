@@ -1,0 +1,65 @@
+.photo-container {
+    position: relative; /* Permite que a imagem de perfil sobreponha a capa */
+    margin: 0 auto; /* Centraliza o container */
+    width: 100%; /* Ajuste para garantir que o container ocupe toda a largura */
+}
+
+.cover-photo {
+    background-image: url('../Midias/Perfil/capa.jpg'); /* Substitua pela sua imagem de capa */
+    height: 200px; /* Ajuste a altura conforme necessário */
+    background-size: cover; /* Faz com que a imagem cubra todo o espaço */
+    background-position: center; /* Centraliza a imagem */
+    width: 100%; /* Largura do container */
+    border-radius: 8px; /* Arredonda os cantos da capa, se desejar */
+    position: relative; /* Necessário para que a imagem de perfil a sobreponha */
+    z-index: 1; /* Garante que a capa fique atrás da imagem de perfil */
+}
+
+.profile-photo {
+    position: absolute; /* Permite que a imagem de perfil fique sobre a capa */
+    top: 120px; /* Ajuste a posição vertical para sobrepor a capa */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta o posicionamento para o centro */
+    width: 100px; /* Ajuste o tamanho da imagem de perfil */
+    height: 100px; /* Ajuste o tamanho da imagem de perfil */
+    border-radius: 50%; /* Faz a imagem ficar em formato circular */
+    border: 3px solid white; /* Adiciona uma borda branca ao redor da imagem */
+    z-index: 2; /* Garante que a imagem de perfil fique acima da capa */
+}
+
+.fixed-bar {
+    position: fixed;
+    bottom: 0; /* Fica na parte inferior da tela */
+    left: 0;
+    width: 100%; /* Largura total da página */
+    background-color: #333; /* Cor de fundo da barra */
+    padding: 10px 0; /* Espaçamento interno */
+    text-align: center; /* Centraliza os botões */
+    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+    display: flex;
+    justify-content: space-around; /* Garante espaçamento igual entre os botões */
+    align-items: center; /* Centraliza verticalmente os itens na barra */
+    flex-wrap: wrap; /* Permite que os botões quebrem para uma nova linha, se necessário */
+}
+
+.nav-button {
+    color: white; /* Cor do texto */
+    padding: 10px 15px; /* Espaçamento interno dos botões */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 16px; /* Tamanho da fonte dos botões */
+}
+
+.nav-button i {
+    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+.nav-button:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+.content {
+    padding: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}

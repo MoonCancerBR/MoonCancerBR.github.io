@@ -1,0 +1,24 @@
+@media (max-width: 480px) {
+    .fixed-bar {
+        padding: 5px 0; /* Reduz o padding vertical da barra */
+    }
+
+    .nav-button {
+        font-size: 14px; /* Diminui o tamanho da fonte dos botões */
+        padding: 8px 10px; /* Diminui o padding dos botões */
+    }
+
+    .nav-button i {
+        font-size: 18px; /* Reduz o tamanho dos ícones */
+    }
+}
+
+@media (max-width: 768px) {
+    .comments-display {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%; /* Botões ocupam toda a largura em telas menores */
+    }
+}

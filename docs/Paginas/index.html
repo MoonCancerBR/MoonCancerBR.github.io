@@ -1,0 +1,52 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Luís Fernando de Sá Amorim</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<header id="barContainer"></header>
+
+<div class="social-icons">
+    <a href="https://github.com/seu_usuario" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="mailto:seuemail@gmail.com" target="_blank">
+        <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://linkedin.com/in/seu_usuario" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+</div>
+
+<section class="comments-section">
+    <h2>Comentários</h2>
+    <div id="commentsDisplay"></div>
+</section>
+
+<!-- Adiciona o GIF indicando desenvolvimento -->
+<div class="dev-gif-container" style="text-align: center; margin: 20px 0;">
+    <img src="../Midias/Outros/dev.gif" alt="Em Desenvolvimento" style="max-width: 100%; height: auto;">
+</div>
+
+<!-- Adiciona o arquivo JavaScript -->
+<script src="../Js/comments.js"></script>
+<script src="../Js/loadBar.js"></script>
+<script>
+    // Função para carregar o conteúdo do bar.html
+    fetch('../Navegacao/bar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('barContainer').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o bar.html:', error));
+</script>
+
+</body>
+</html>

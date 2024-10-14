@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Luís Fernando de Sá Amorim</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div id="barContainer"></div>
+    <h1>Sobre Mim</h1>
+    <p class="description">Saiba mais sobre minhas curiosidades e hobbies pessoais.</p>
+</header>
+
+<section class="content">
+    <h2>Quem sou eu?</h2>
+    <p>
+        Sou Luís Fernando de Sá Amorim, estudante de Ciências da Computação com grande interesse por tecnologia e desenvolvimento de software. Estou sempre em busca de aprimorar meus conhecimentos e explorar novas áreas, a fim de encontrar o melhor caminho a seguir em minha carreira.
+    </p>
+</section>
+
+<section class="content">
+    <h2>Meus Hobbies</h2>
+    <ul class="hobbies-list">
+        <li><i class="fas fa-gamepad"></i> Jogar videogames, especialmente RPGs e jogos de estratégia.</li>
+        <li><i class="fas fa-music"></i> Tocar violão e explorar diferentes estilos musicais.</li>
+        <li><i class="fas fa-hiking"></i> Fazer trilhas e apreciar a natureza.</li>
+        <li><i class="fas fa-film"></i> Assistir a filmes e séries, com preferência por ficção científica.</li>
+        <li><i class="fas fa-book"></i> Ler livros sobre tecnologia e ficção.</li>
+    </ul>
+</section>
+
+<section class="content">
+    <h2>Curiosidades</h2>
+    <p>
+        Tenho um grande interesse por novas tecnologias e estou sempre me atualizando sobre as tendências no mundo da programação. Sou um fã de animes e cultura pop japonesa. Além disso, gosto de experimentar novas receitas culinárias e explorar diferentes culturas através da gastronomia.
+    </p>
+</section>
+
+<section class="content">
+    <h2>Autocríticas</h2>
+    <p>
+        Reconheço que ainda tenho muito a aprender e a melhorar. Às vezes, minha dificuldade em delegar tarefas me impede de colaborar efetivamente em equipe. Além disso, estou trabalhando para gerenciar melhor meu tempo entre estudos e hobbies, para não comprometer meu desenvolvimento pessoal e profissional. Essa consciência é fundamental para meu crescimento e evolução.
+    </p>
+</section>
+
+<script src="../Js/script.js"></script>
+<script src="../Js/loadBar.js"></script>
+<script>
+    // Função para carregar o conteúdo do bar.html
+    fetch('../Navegacao/bar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('barContainer').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o bar.html:', error));
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-bottom: 60px; /* Espaçamento inferior para evitar que o conteúdo fique atrás da barra */
+    text-align: center; /* Centraliza o texto e os elementos */
+    line-height: 1.6; /* Melhora a legibilidade do texto */
+}
+
+h1, h2 {
+    color: #333; /* Cor escura para os títulos */
+}
+
+h1 {
+    margin: 30px 0 10px; /* Aumentado a margem superior para 30px */
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+input[type="text"], textarea {
+    width: 100%; /* Largura total */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #4CAF50; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+button {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Cor do botão ao passar o mouse */
+}

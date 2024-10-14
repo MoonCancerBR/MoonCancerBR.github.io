@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Luís Fernando de Sá Amorim</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div id="barContainer"></div>
+    <h1>Projetos</h1>
+    <p class="description">Explore os projetos que desenvolvi.</p>
+</header>
+
+<section class="content">
+    <h2>Projetos Destacados</h2>
+    
+    <div class="project">
+        <h3>Nome do Projeto 1</h3>
+        <p>Descrição breve do projeto, incluindo o objetivo, tecnologias utilizadas e seu papel no desenvolvimento.</p>
+        <a href="link_do_projeto" target="_blank">Ver Projeto <i class="fas fa-external-link-alt"></i></a>
+    </div>
+
+    <div class="project">
+        <h3>Nome do Projeto 2</h3>
+        <p>Descrição breve do projeto, incluindo o objetivo, tecnologias utilizadas e seu papel no desenvolvimento.</p>
+        <a href="link_do_projeto" target="_blank">Ver Projeto <i class="fas fa-external-link-alt"></i></a>
+    </div>
+
+    <div class="project">
+        <h3>Nome do Projeto 3</h3>
+        <p>Descrição breve do projeto, incluindo o objetivo, tecnologias utilizadas e seu papel no desenvolvimento.</p>
+        <a href="link_do_projeto" target="_blank">Ver Projeto <i class="fas fa-external-link-alt"></i></a>
+    </div>
+
+    <!-- Adicione mais projetos conforme necessário -->
+</section>
+
+<script src="../Js/script.js"></script>
+<script src="../Js/loadBar.js"></script>
+<script>
+    // Função para carregar o conteúdo do bar.html
+    fetch('../Navegacao/bar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('barContainer').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o bar.html:', error));
+</script>
+</body>
+</html>
